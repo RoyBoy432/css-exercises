@@ -24,3 +24,41 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.content-container {
+  display: flex;
+  margin: 2.5em 1em 0 1em;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+  justify-content: center;
+  gap: 52px;
+
+}
+
+.content-piece {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  gap: 1em;
+  flex-wrap: wrap;
+  /*border: solid orange 11px;*/
+  flex: 0 1 auto;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  /*width: 200px;*/
+  flex-direction: row;
+  flex: 0 1 auto;
+  text-align: center;
+  /*flex-wrap: nowrap;*/
+  /*align-items: center;*/
+  /*border: solid green 9px;*/
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
