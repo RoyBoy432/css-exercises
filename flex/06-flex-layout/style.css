@@ -7,6 +7,65 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.webpage {
+ display: flex;
+ flex-direction: column; 
+ align-items: center;
+ justify-content: space-between;
+}
+
+.header, .footer {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  /*background-color: pink;*/
+  justify-content: flex-start;
+  padding: 12px;
+}
+
+.footer {
+  background-color: rgb(229, 229, 229);
+}
+
+.left-links, .right-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex: 1 1 auto;
+  /*border: solid orange 10px;*/
+}
+
+.left-links {
+  justify-content: flex-start;
+}
+
+.right-links {
+  justify-content: flex-end;
+}
+
+.left-links li a, .right-links li a{
+  color: darkgrey;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /*border: solid salmon 9px;*/
+  align-items: center;
+  gap: 0.05em;
+  padding: 5px;
+}
+
+.content .buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.content .buttons button {
+  padding: 0.4em;
+}
+
 img {
   width: 600px;
 }
@@ -16,6 +75,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  margin: 0;
 }
 
 input {
@@ -24,4 +84,13 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
