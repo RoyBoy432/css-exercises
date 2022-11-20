@@ -17,9 +17,27 @@ body {
 
 .modal {
   background: white;
+  padding: 18px;
   width: 480px;
+  /*height: 480px;*/
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /*justify-content: space-around;*/
+  flex: 0 2 auto;
+
+}
+
+/*There is a weird effect such that it is impossible to decrease the width of the browser to be less than the width of the modal element. This bug is also in the TOP solution, so I think it's ok that I have the same bug.*/
+
+.toprow-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 1 auto;
 }
 
 .icon {
@@ -33,6 +51,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 1 auto;
+}
+
+.header {
+  display: flex;
+  flex: 2 1 0;
+  font-weight: bold;
+  margin-left: 18px;
+  justify-content: ;
 }
 
 .close-button {
@@ -46,6 +73,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
+}
+
+.text {
+  display: flex;
+  margin-left: 60px;
+
+}
+
+.buttons-container {
+  display: flex;
+  flex: 0 1 auto;
+  margin: 15px 0 15px 60px;
+  gap: 4px;
 }
 
 button {
